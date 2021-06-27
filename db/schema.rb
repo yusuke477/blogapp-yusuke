@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_06_27_024934) do
     t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
-  create_table "pfofiles", force: :cascade do |t|
+  create_table "profiles", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "nickname"
     t.text "introduction"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2021_06_27_024934) do
     t.boolean "subscribed", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_pfofiles_on_user_id"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

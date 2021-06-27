@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: pfofiles
+# Table name: profiles
 #
 #  id           :integer          not null, primary key
 #  birthday     :date
@@ -14,8 +14,8 @@
 #
 # Indexes
 #
-#  index_pfofiles_on_user_id  (user_id)
+#  index_profiles_on_user_id  (user_id)
 #
-class Pfofile < ApplicationRecord
+class Profile < ApplicationRecord
   belongs_to :user
 end
