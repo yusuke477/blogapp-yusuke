@@ -36,6 +36,10 @@ class Article < ApplicationRecord
     user.display_name
   end
 
+  def like_count
+    likes.count
+  end
+
   def validate_title_and_content_length
     char_count = self.title.length + self.content.length
     unless char_count > 100
