@@ -28,6 +28,7 @@ gem 'devise'
 gem 'faker'
 gem 'hamlit'
 gem 'aws-sdk-s3', require: false
+gem "mimemagic", "~> 0.3.10"
 
 
 # Use Active Storage variant
